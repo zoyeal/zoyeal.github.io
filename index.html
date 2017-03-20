@@ -1,16 +1,7 @@
-<html>
-  <head>
-    <title>Dacheng's Blog</title>
-  </head>
-  <body bgcolor=white>
-
-    <p>Hello</p>
-    <p>Welcome to my website</p>
-    <p>I am building this page hardly...</p>
-    <p>Please be patient, and waiting for new things coming...
-    <ul>
-      <li>More Information Please Click <a href="https://github.com/zoyeal">More</a>.
-    </ul>
-
-  </body>
-</html>
+---
+layout: default
+---
+<h1 class="headline">{{site.title}}</h1>
+{% for post in site.posts %}
+<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+{% endfor %}
