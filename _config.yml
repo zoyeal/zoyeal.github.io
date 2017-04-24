@@ -1,41 +1,20 @@
-### Zoyeal's Home
+# Site settings
+title: 大成
+description: 虚拟世界的精神角落
+# baseurl: /zoyeal.github.io # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-title: Dacheng
-baseurl: /zoyeal.github.io # name of the repository
-email: zoyeal@hotmail.com
+# User settings
+username:  DACHENG
+user_description:  身处时间维度的世界里，最可怕就是任由时间流逝，没有为这个世界创造一点价值。
+user_title:  我的个人网站
+email:  zoyeal@gmail.com
+weibo_username:  zoyeal
+github_username: zoyeal
+ins_username:    dcdeng
 
+# Google-analytics
+google-analytics:
+  id: ""
 
-
-highlighter: rouge
-markdown: kramdown
-### exclude the instructions / write-up in the README.md
-
-
-# Tracker
-analytics: UA-83979019-1
-
-# Comments
-disqus-shortname: webjeda-demo
-
-
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-  
-
-sass:
- style: compressed
-
-exclude:
-- README.md
-
-
-gems: [jekyll-seo-tag, jekyll-paginate]
+exclude: ['package.json', 'src' , 'node_modules']
