@@ -1,0 +1,20 @@
+# Site settings
+title: 大成
+description: 虚拟世界的精神角落
+# baseurl: /zoyeal.github.io # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username:  DACHENG
+user_description:  身处时间维度的世界里，最可怕就是任由时间流逝，没有为这个世界创造一点价值。
+user_title:  我的个人网站
+email:  zoyeal@gmail.com
+weibo_username:  zoyeal
+github_username: zoyeal
+ins_username:    dcdeng
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
