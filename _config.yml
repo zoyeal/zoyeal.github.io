@@ -15,6 +15,6 @@ ins_username:    dcdeng
 
 # Google-analytics
 google-analytics:
-  id: "UA-98053258-1"
+  id: "UA-98431005-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
