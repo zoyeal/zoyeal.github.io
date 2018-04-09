@@ -1,20 +1,25 @@
-# Site settings
-title: 大成
-description: 虚拟世界的精神角落
-# baseurl: /zoyeal.github.io # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# Site Build Settings
+url: "https://zoyeal.github.io"
+# baseurl: ""
 
-# User settings
-username:  DACHENG
-user_description:  身处时间维度的世界里，最可怕的就是任由时间流逝，没有为这个世界创造一点价值。
-user_title:  欢迎访问我的个人网站
-email:  zoyeal@gmail.com
-weibo_username:  zoyeal
-github_username: zoyeal
-ins_username:    dcdeng
+# jekyll-paginate configuration
+paginate:            5
 
-# Google-analytics
-google-analytics:
-  id: "UA-98431005-1"
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-exclude: ['package.json', 'src' , 'node_modules']
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           "太戊"
+description:	       "虚拟世界的精神角落。"
+author:              "zoyeal"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml

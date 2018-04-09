@@ -1,1 +1,1 @@
-This is a simple template of Jekyll.
+This website is modified by ZOYEAL and based on [Millennial](https://github.com/LeNPaul/Millennial).

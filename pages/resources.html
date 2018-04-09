@@ -1,0 +1,89 @@
+---
+layout: page
+title: 干货都在这儿了
+
+bookmarks: 
+ - name: 网站导航
+   link: "http://lackar.com/aa/"
+   img: "http://lackar.com/aa/logo.png"
+ - name: 胖次搜索
+   link: "http://panc.cc"
+   img: "http://panc.cc/favicon.ico"
+ - name: 人大经济论坛
+   link: "http://bbs.pinggu.org/"
+   img: "http://cdn.pinggu.org/static/2015/images/jg-logo.png"
+ - name: SeeSeed
+   link: "https://www.seeseed.com/"
+   img: "https://tvax4.sinaimg.cn/crop.30.26.548.548.180/006Ixb7dly8feij4f5x17j30go0got94.jpg"
+
+wall: 
+ - name: YouTube
+   link: "https://www.youtube.com/"
+   img: "https://coding.net/u/hi_xk/p/starnavi/git/raw/files/youtube.png"
+ - name: Instagram
+   link: "https://www.instagram.com/"
+   img: "http://77g2kh.com1.z0.glb.clouddn.com/instagram.png"
+ - name: Twitter
+   link: "https://twitter.com/"
+   img: "https://coding.net/u/hi_xk/p/starnavi/git/raw/files/twitter.png"
+ - name: Facebook
+   link: "https://www.facebook.com"
+   img: "https://coding.net/u/hi_xk/p/starnavi/git/raw/files/facebook.png"
+ - name: Wikipedia
+   link: "https://www.wikipedia.org/"
+   img: "https://coding.net/u/hi_xk/p/starnavi/git/raw/files/wikipedia.png"
+ - name: DailyMail
+   link: "http://www.dailymail.co.uk/news/worldnews/index.html"
+   img: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523275997128&di=9a225b4696d1c345b039771dce0d0110&imgtype=0&src=http%3A%2F%2Fp4.qhimg.com%2Ft014c063562e9c99d05.png"
+ - name: 香港高登
+   link: "https://www.hkgolden.com/"
+   img: "https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/83/7e/df/837edfe5-856b-5b0a-5b54-45547b320a03/source/60x60bb.jpg"
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	h2.heading-sm { font-size: 18px; line-height: 24px; }
+
+	.headline h2 { margin: 0 0 -2px 10px; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid #72c02c; }
+	
+	.blocks { max-width: 900px; margin: 0 auto; }
+	
+	ul { -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; -webkit-padding-start: 40px; }
+	
+	ul.icon_list li { position: relative; float: left; width: 56px; height: 90px; margin-right: 60px; list-style: none; }
+	
+	ul.icon_list img { width: 48px; height: 48px; padding: 4px; border-radius: 28px; }
+	
+	ul.icon_list span { position: absolute; bottom: 12px; left: 0; display: block; width: 100px; margin-left: -22px; text-align: center; color: #428bca;	}
+	</style>
+</head>
+
+
+<body>
+	<div class="blocks">
+		<div id="category-best-vpn" class="headline sites-group">
+			<h2 class="heading-sm">常用书签</h2>
+		</div>
+		<ul class="icon_list">
+			{% for site in page.bookmarks %}
+			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<table style="clear:both"></table>
+	<div class="blocks">
+		<div id="category-best-vpn" class="headline sites-group">
+			<h2 class="heading-sm">翻墙可减肥</h2>
+		</div>
+		<ul class="icon_list">
+			{% for site in page.wall %}
+			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<br>
+	
+</body>
+</html>
