@@ -5,17 +5,35 @@ description: "masonry"
 active: gallery
 album-title: "流光瞬息"
 images:
- - image_path: "https://img3.doubanio.com/view/photo/l/public/p2456682821.webp"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic2.jpg"
    caption: 色达佛学院
    exif: December 2016 | 色达·四川
- - image_path: "https://img3.doubanio.com/view/photo/l/public/p2456682506.webp"
-   caption: 佛学院的夜晚
-   exif: December 2016 | 色达·四川
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic5.jpg"
+   caption: 海豚🐬
+   exif: March 2016 | Belford, United Kindom
  - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic1.webp"
    caption: Ben山脚下的村庄
-   exif: March 2015| Fort William, United Kindom
- - image_path: "https://img3.doubanio.com/view/photo/l/public/p2356183983.webp"
-   caption: 纽卡日落 @ Claremont Tower
+   exif: March 2016| Fort William, United Kindom
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic7.jpg"
+   caption: Sunset of Exhibition Park
+   exif: June 2016 | Newcastle, United Kindom
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic8.jpg"
+   caption: Ferris wheel
+   exif: June 2016 | Newcastle, United Kindom
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic9.jpg"
+   caption: 巴约之家
+   exif: July 2016 | Barcelona, Spanish
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic11.jpg"
+   caption: On The Road
+   exif: July 2016 | Belgium
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic13.jpg"
+   caption: 水上城市
+   exif: July 2016 | Amsterdam, Netherlands
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic14.jpg"
+   caption: 黄昏
+   exif: August 2016 | Newcastle, United Kindom
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic16.jpg"
+   caption: 冬季安静的早晨
    exif: February 2016 | Newcastle, United Kindom
 ---
 
@@ -30,11 +48,11 @@ images:
 			<h5>{{page.album-title}}</h5>
 			<br></br>
 			<!-- Gallery __-->
-			<div class="gallery masonry-gallery" onclick="window.open('http://www.baidu.com')">
+			<div class="gallery masonry-gallery" >
 				{% for image in page.images %}
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
-						<a href="{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.exif }}">
+						<a href="https://www.douban.com/people/zoyeal/photos" class="popup" title="{{ image.caption }}" data-caption="{{ image.exif }}">
 							<img src="{{ image.image_path }}">
 						</a>
 					</header>
