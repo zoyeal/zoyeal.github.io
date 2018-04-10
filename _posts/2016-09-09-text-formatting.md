@@ -3,7 +3,7 @@ layout: post
 title: "Text Formatting"
 author: "Paul Le"
 categories: doc
-tags: [sample]
+tags: [tutorial, normal]
 image: arctic-1.jpg
 ---
 

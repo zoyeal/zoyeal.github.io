@@ -1,9 +1,9 @@
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'millennial-3'
+  disqus_shortname: 'zoyeal'
 
-google-ID: 'UA-98431005-1'
+google-ID: 'UA-98053258-1'
 
 menu:
 - {name: '博文', folder: 'pages', file: 'posts.html'}
@@ -13,9 +13,9 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'instagram', link: 'https://instagram.com/dcdeng'}
 - {icon: 'weibo', link: 'https://weibo.com/zoyeal'}
 - {icon: 'github', link: 'https://github.com/zoyeal'}
+- {icon: 'instagram', link: 'https://instagram.com/dcdeng'}
 - {icon: 'envelope', link: 'mailto:zoyeal@gmail.com'}
 
 # Customize site text
@@ -23,7 +23,7 @@ pagination:
   next_page: '后页'
   previous_page: '前页'
 
-sharing_button_prompt: '支持与分享↷'
+sharing_button_prompt: '分享至 ↷'
 
 related_posts: '☟ 推荐阅读 . . .'
 

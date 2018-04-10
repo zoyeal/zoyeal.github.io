@@ -3,7 +3,7 @@ layout: post
 title: "DACHENG 2.0 - 网站更新笔记"
 author: "zoyeal"
 categories: doc
-tags: [website, notes]
+tags: [self, notes, normal]
 image: arctic-2.jpg
 ---
 
@@ -21,6 +21,17 @@ image: arctic-2.jpg
 
 
 ##### 更新笔记如下：
+
+&nbsp;
+
+- 2018.04.10
+
+---
+    - 添加Google Analytics
+
+    - 添加来必力评论系统
+
+    - 调整收藏书签图标间距
 
 
 &nbsp;
