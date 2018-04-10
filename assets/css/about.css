@@ -1,0 +1,31 @@
+.profile {
+  border-radius: 0.6rem;
+  width: 800px;
+  max-width: 90%;
+  height: 500px;
+  overflow: auto;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f1f1f152;
+  text-align: center;
+}
+.container-face { 
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.container-face img {
+  border-radius: 50%;
+  width: 80px;
+  max-width: 100%;
+  border-style: none;
+}
+.comment {
+  width: 800px;
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
