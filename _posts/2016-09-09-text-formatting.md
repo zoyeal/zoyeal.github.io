@@ -4,7 +4,7 @@ title: "Text Formatting"
 author: "Paul Le"
 categories: doc
 tags: [tutorial, normal]
-image: arctic-1.jpg
+image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/text_formatting.jpg"
 ---
 
 # Markdown Support

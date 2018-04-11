@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="page-content">
   <h1>
     {{ page.title }}
@@ -27,7 +26,7 @@ layout: default
 
   {% if page.image %}
     <div class="featured-image">
-      <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+      <img src="{{ page.image }}">
     </div>
   {% endif %}
 
@@ -35,6 +34,7 @@ layout: default
     {{ content }}
   </article>
 
+  <div class="share-prompt">转载请注明作者和出处: http://www.zoyeal.com{{ page.url }}</div>
 
   <div class="post-share">
     <div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
@@ -44,9 +44,7 @@ layout: default
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
     </div>
   </div>
-
-  {% include livere.html %}
-
+  
   <div class="related">
     <h2>{{ site.data.settings.related_posts }}</h2>
     {% assign listed_posts_urls = page.url | split: ' ' %}
@@ -60,7 +58,7 @@ layout: default
                 <a href="{{ site.github.url }}{{ mypost.url }}">
                   <div class="related-thumbnail">
                     {% if mypost.image %}
-                      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ mypost.image }}">
+                      <img src="{{ mypost.image }}">
                     {% endif %}
                   </div>
                   <div class="related-title">
@@ -77,8 +75,69 @@ layout: default
     </ul>
   </div>
 
-  {% if site.data.settings.disqus.comments %}
-    {% include disqus.html %}
-  {% endif %}
+  <a href="#" id="cdtop" class="cd-top cd-is-visible cd-fade-out"></a>
 
+  <div class="comment-area">
+    <h2>Comments</h2>
+    {% include livere.html %}
+  </div>
+
+  <!-- {% if site.data.settings.disqus.comments %}
+    {% include disqus.html %}
+  {% endif %} -->
 </div>
+
+<script type="text/javascript">
+  window.onload = function(){
+    var offset = 100,
+    offset_opacity = 1200,
+    scroll_top_duration = 700,
+    topbtn = document.getElementById("cdtop");
+
+    // if(document.documentElement.scrollTop>0){
+    //   window.scrollTo(0,0);
+    // }
+
+    window.onscroll = function(){
+      if (document.documentElement.scrollTop>offset) {
+          mybtn.addClass('cd-is-visible');
+      }
+      else{
+          mybtn.removeClass('cd-is-visible cd-fade-out');
+      }
+    }
+
+     
+     // window.onscroll = function(){
+     //    var osTop = document.body.scrollTop||document.documentElement.scrollTop;
+     //    var clientHeight = document.documentElement.clientHeight;
+     //    if (osTop>clientHeight) {
+     //        // mybtn.style.display = "block"
+     //        mybtn.addClass('cd-is-visible');
+     //    }
+     //    else{
+     //        // mybtn.style.display = "none"
+     //        mybtn.removeClass('cd-is-visible cd-fade-out');
+     //    }
+     //  }
+  }
+    // var offset = 100,
+    // offset_opacity = 1200,
+    // scroll_top_duration = 700,
+    // $back_to_top = $('.cd-top');
+
+    // $(window).scroll(function(){
+    //     ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    //     if( $(this).scrollTop() > offset_opacity ) {
+    //         $back_to_top.addClass('cd-fade-out');
+    //     }
+    // });
+    // //smooth scroll to top
+    // $back_to_top.on('click', function(event){
+    //     event.preventDefault();
+    //     $('body,html').animate({
+    //         scrollTop: 0 ,
+    //         }, scroll_top_duration
+    //     );
+    // }
+</script>

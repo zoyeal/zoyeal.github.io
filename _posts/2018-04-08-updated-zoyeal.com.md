@@ -4,7 +4,7 @@ title: "DACHENG 2.0 - 网站更新笔记"
 author: "zoyeal"
 categories: doc
 tags: [self, notes, normal]
-image: arctic-2.jpg
+image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 ---
 
 &nbsp;
@@ -22,6 +22,12 @@ image: arctic-2.jpg
 
 ##### 更新笔记如下：
 
+&nbsp;
+
+- 2018.04.11
+
+---
+    - 调整主页翻页图标
 
 &nbsp;
 
