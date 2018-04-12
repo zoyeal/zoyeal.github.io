@@ -75,7 +75,7 @@ layout: default
     </ul>
   </div>
 
-  <a href="#" id="cdtop" class="cd-top cd-is-visible cd-fade-out"></a>
+  <a href="#" id="cdtop" class="cd-top"></a>
 
   <div class="comment-area">
     <h2>Comments</h2>
@@ -100,12 +100,30 @@ layout: default
 
     window.onscroll = function(){
       if (document.documentElement.scrollTop>offset) {
-          mybtn.addClass('cd-is-visible');
+          deleteClass(topbtn,'cd-is-visible cd-fade-out');
       }
       else{
-          mybtn.removeClass('cd-is-visible cd-fade-out');
+          addClass(topbtn, 'cd-is-visible');
       }
     }
+
+    function hasClass(element,csName){
+ 
+　　　　　　　return element.className.match(RegExp('(\\s|^)'+csName+'(\\s|$)'));
+　　　　}
+
+    function addClass(element,csName) {
+      if(!hasClass(element,csName)){
+　　　　　element.className+=' '+csName;
+        }
+    }
+
+    function deleteClass(element,csName){
+　　　　　　　if(!hasClass(element,csName)){
+　　　　　　　　　element.className.replace(RegExp('(\\s|^)'+csName+'(\\s|$)'),' ');
+　　　　　}
+    }
+　　　　　　　
 
      
      // window.onscroll = function(){
