@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="page-content">
   <h1>
     {{ page.title }}
@@ -34,7 +35,9 @@ layout: default
     {{ content }}
   </article>
 
-  <div class="share-prompt">转载请注明作者和出处: http://www.zoyeal.com{{ page.url }}</div>
+  <a id="cdtop" class="cd-top"><span>回到顶部</span></a>
+
+  <div class="post-date">转载请注明作者和出处: http://www.zoyeal.com{{ page.url }}</div>
 
   <div class="post-share">
     <div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
@@ -75,8 +78,11 @@ layout: default
     </ul>
   </div>
 
+<<<<<<< HEAD
   <a href="#" id="cdtop" class="cd-top"></a>
 
+=======
+>>>>>>> 7c8e43bb2b8bf24fe2e7b6bfdc3a4943d1c89423
   <div class="comment-area">
     <h2>Comments</h2>
     {% include livere.html %}
@@ -87,6 +93,7 @@ layout: default
   {% endif %} -->
 </div>
 
+<<<<<<< HEAD
 <script type="text/javascript">
   window.onload = function(){
     var offset = 100,
@@ -159,3 +166,6 @@ layout: default
     //     );
     // }
 </script>
+=======
+<script language="JavaScript" src="{{ site.baseurl }}/js/cdtop.js"></script>
+>>>>>>> 7c8e43bb2b8bf24fe2e7b6bfdc3a4943d1c89423
