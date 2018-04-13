@@ -5,34 +5,34 @@ description: "masonry"
 active: gallery
 album-title: "流光瞬息"
 images:
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic2.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic2"
    caption: 色达佛学院
    exif: December 2016 | 色达·四川
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic5.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic5"
    caption: 海豚
    exif: March 2016 | Belford, United Kindom
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic4.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic4"
    caption: Ben山脚下的村庄
    exif: March 2016 | Fort William, United Kindom
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic7.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic7"
    caption: Sunset of Exhibition Park
    exif: June 2016 | Newcastle, United Kindom
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic8.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic8"
    caption: Ferris wheel
    exif: June 2016 | Newcastle, United Kindom
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic9.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic9"
    caption: 巴约之家
    exif: July 2016 | Barcelona, Spanish
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic11.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic11"
    caption: On The Road
    exif: July 2016 | Belgium
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic13.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic13"
    caption: 水上城市
    exif: July 2016 | Amsterdam, Netherlands
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic14.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic14"
    caption: 黄昏
    exif: August 2016 | Newcastle, United Kindom
- - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic16.jpg"
+ - image_path: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/pic16"
    caption: 冬季安静的早晨
    exif: February 2016 | Newcastle, United Kindom
 ---
@@ -52,8 +52,8 @@ images:
 				{% for image in page.images %}
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
-						<a class="popup" title="{{ image.caption }}" data-caption="{{ image.exif }}">
-							<img src="{{ image.image_path }}">
+						<a class="popup" href="{{ image.image_path }}.jpg" title="{{ image.caption }}" data-caption="{{ image.exif }}">
+							<img src="{{ image.image_path }}-small.jpg">
 						</a>
 					</header>
 					<figcaption class='gallery-caption'>
@@ -68,25 +68,22 @@ images:
 		</div>
 	</section>
 
-
-<!-- jQuery -->    
-
+<!-- jQuery -->   
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script> -->
+<!-- <script src="{{ site.baseurl }}/js/retina.min.js"></script> -->
 <!-- include Masonry -->
 <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script> -->
 <!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script> -->
 <!-- include custom script -->
 <script src="{{ site.baseurl }}/js/scripts.js"></script>
 <!-- Modernizr -->
-<script src="{{ site.baseurl }}/js/modernizr.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/modernizr.js"></script> -->
 
 </body></html>

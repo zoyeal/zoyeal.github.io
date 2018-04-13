@@ -25,6 +25,8 @@ layout: default
     {% endif %}
   </span>
 
+  <a id="cdtop" class="cd-top"><span>回到顶部</span></a>
+
   {% if page.image %}
     <div class="featured-image">
       <img src="{{ page.image }}">
@@ -34,8 +36,6 @@ layout: default
   <article>
     {{ content }}
   </article>
-
-  <a id="cdtop" class="cd-top"><span>回到顶部</span></a>
 
   <div class="post-date">转载请注明作者和出处: http://www.zoyeal.com{{ page.url }}</div>
 
@@ -82,10 +82,6 @@ layout: default
     <h2>Comments</h2>
     {% include livere.html %}
   </div>
-
-  <!-- {% if site.data.settings.disqus.comments %}
-    {% include disqus.html %}
-  {% endif %} -->
 </div>
 
 <script language="JavaScript" src="{{ site.baseurl }}/js/cdtop.js"></script>
