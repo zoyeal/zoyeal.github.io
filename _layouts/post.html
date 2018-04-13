@@ -78,10 +78,90 @@ layout: default
     </ul>
   </div>
 
+<<<<<<< HEAD
+  <a href="#" id="cdtop" class="cd-top"></a>
+
+=======
+>>>>>>> 7c8e43bb2b8bf24fe2e7b6bfdc3a4943d1c89423
   <div class="comment-area">
     <h2>Comments</h2>
     {% include livere.html %}
   </div>
 </div>
 
+<<<<<<< HEAD
+<script type="text/javascript">
+  window.onload = function(){
+    var offset = 100,
+    offset_opacity = 1200,
+    scroll_top_duration = 700,
+    topbtn = document.getElementById("cdtop");
+
+    // if(document.documentElement.scrollTop>0){
+    //   window.scrollTo(0,0);
+    // }
+
+    window.onscroll = function(){
+      if (document.documentElement.scrollTop>offset) {
+          deleteClass(topbtn,'cd-is-visible cd-fade-out');
+      }
+      else{
+          addClass(topbtn, 'cd-is-visible');
+      }
+    }
+
+    function hasClass(element,csName){
+ 
+　　　　　　　return element.className.match(RegExp('(\\s|^)'+csName+'(\\s|$)'));
+　　　　}
+
+    function addClass(element,csName) {
+      if(!hasClass(element,csName)){
+　　　　　element.className+=' '+csName;
+        }
+    }
+
+    function deleteClass(element,csName){
+　　　　　　　if(!hasClass(element,csName)){
+　　　　　　　　　element.className.replace(RegExp('(\\s|^)'+csName+'(\\s|$)'),' ');
+　　　　　}
+    }
+　　　　　　　
+
+     
+     // window.onscroll = function(){
+     //    var osTop = document.body.scrollTop||document.documentElement.scrollTop;
+     //    var clientHeight = document.documentElement.clientHeight;
+     //    if (osTop>clientHeight) {
+     //        // mybtn.style.display = "block"
+     //        mybtn.addClass('cd-is-visible');
+     //    }
+     //    else{
+     //        // mybtn.style.display = "none"
+     //        mybtn.removeClass('cd-is-visible cd-fade-out');
+     //    }
+     //  }
+  }
+    // var offset = 100,
+    // offset_opacity = 1200,
+    // scroll_top_duration = 700,
+    // $back_to_top = $('.cd-top');
+
+    // $(window).scroll(function(){
+    //     ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    //     if( $(this).scrollTop() > offset_opacity ) {
+    //         $back_to_top.addClass('cd-fade-out');
+    //     }
+    // });
+    // //smooth scroll to top
+    // $back_to_top.on('click', function(event){
+    //     event.preventDefault();
+    //     $('body,html').animate({
+    //         scrollTop: 0 ,
+    //         }, scroll_top_duration
+    //     );
+    // }
+</script>
+=======
 <script language="JavaScript" src="{{ site.baseurl }}/js/cdtop.js"></script>
+>>>>>>> 7c8e43bb2b8bf24fe2e7b6bfdc3a4943d1c89423
