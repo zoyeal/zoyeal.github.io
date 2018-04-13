@@ -3,7 +3,7 @@ layout: post
 title: "DACHENG 2.0 - 网站更新笔记"
 author: "zoyeal"
 categories: doc
-tags: [self, notes, normal]
+tags: [web, records]
 image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 ---
 
@@ -28,6 +28,8 @@ image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 
 ---
     - 添加网站logo
+
+    - 添加`公益404`页面
 
 &nbsp;
 
