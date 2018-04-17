@@ -3,7 +3,7 @@ layout: post
 title: "DACHENG 2.0 - 网站更新笔记"
 author: "zoyeal"
 categories: doc
-tags: [web, records]
+tags: [normal, records]
 image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 ---
 
