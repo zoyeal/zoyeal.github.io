@@ -41,6 +41,7 @@ images:
 <head>
 	<meta content="charset=utf-8">
 	<link rel="stylesheet" href="/assets/css/photos.css" type="text/css">
+	<script src="/js/img-glass.min.js"></script>
 </head>
 <body>
 	<section id="content" role="main">
@@ -52,8 +53,8 @@ images:
 				{% for image in page.images %}
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
-						<a class="popup" href="{{ image.image_path }}.jpg" title="{{ image.caption }}" data-caption="{{ image.exif }}">
-							<img src="{{ image.image_path }}-small.jpg">
+						<a class="popup" title="{{ image.caption }}" data-caption="{{ image.exif }}">
+							<img src="{{ image.image_path }}-small.jpg" longdesc="{{ image.image_path }}.jpg">
 						</a>
 					</header>
 					<figcaption class='gallery-caption'>
@@ -69,21 +70,30 @@ images:
 	</section>
 
 <!-- jQuery -->   
+
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<!-- <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script> -->
-<!-- <script src="{{ site.baseurl }}/js/retina.min.js"></script> -->
 <!-- include Masonry -->
 <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+
 <!-- include carousel plugins -->
 <!-- <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script> -->
 <!-- include svg line drawing plugin -->
 <!-- <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script> -->
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- include image popups -->
+<!-- <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script> -->
+<!-- <script src="{{ site.baseurl }}/js/retina.min.js"></script> -->
 <!-- Modernizr -->
 <!-- <script src="{{ site.baseurl }}/js/modernizr.js"></script> -->
 
-</body></html>
+</body>
+	<script>
+        PostbirdImgGlass.init({
+            domSelector:".popup img",
+            animation:true
+        });
+    </script>
+</html>

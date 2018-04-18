@@ -8,11 +8,11 @@ bookmarks:
    desc: AnywhereAnything|网站精选
  - name: 博客大全
    link: "http://daohang.lusongsong.com/"
-   img: "http://daohang.lusongsong.com/favicon.ico"
+   img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-bokedaquan.ico"
    desc: 优秀独立博客导航
  - name: 胖次搜索
    link: "http://panc.cc"
-   img: "http://panc.cc/favicon.ico"
+   img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-panc.ico"
    desc: 网盘搜索引擎
  - name: SeeSeed
    link: "https://www.seeseed.com/"
@@ -24,12 +24,12 @@ bookmarks:
    desc: 软件精选
  - name: ProcessOn
    link: "https://www.processon.com/"
-   img: "https://www.processon.com/favicon.ico"
+   img: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524025645604&di=2bb27ee2f0801914abb55b160b16129f&imgtype=0&src=http%3A%2F%2Fimg.lagou.com%2Fthumbnail_300x300%2Fimage1%2FM00%2F00%2F76%2FCgo8PFTUXamANsyXAABqV021Yf8189.jpg"
    desc: 在线流程图制作
 blogs:
  - name: CSDN
    link: "https://www.csdn.net/"
-   img: "https://img-bbs.csdn.net/upload/201610/26/1477493311_601573.jpg"
+   img: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2490944163,1006757329&fm=27&gp=0.jpg"
    desc: IT博客社区
  - name: 小木虫
    link: "http://muchong.com/bbs"
@@ -45,7 +45,7 @@ blogs:
    desc: 自然科普网站
  - name: 木工爱好者
    link: "http://www.zuojiaju.com/"
-   img: "http://file.zuojiaju.com/eis/logo.png"
+   img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-zuojiaju.png"
    desc: 木工DIY学习分享
  - name: 人人产品经理
    link: "http://www.woshipm.com/"
@@ -54,7 +54,7 @@ blogs:
 it:
  - name: W3school
    link: "http://www.w3school.com.cn/"
-   img: "http://www.w3school.com.cn/favicon.ico"
+   img: "http://i-3-pp8.715083.com/2017/4/8/fa2d9e5c-3d7c-4845-9a18-e60924c312d3.png"
    desc: 网站建设参考
  - name: jQuery插件库
    link: "http://www.jq22.com/"
@@ -128,6 +128,17 @@ wall:
 		</div>
 		<ul class="icon_list">
 			{% for site in page.wall %}
+			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<table style="clear:both"></table>
+	<div class="blocks">
+		<div id="category-best-vpn" class="headline sites-group">
+			<h2 class="heading-sm">IT技术</h2>
+		</div>
+		<ul class="icon_list">
+			{% for site in page.it %}
 			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
 			{% endfor %}
 		</ul>
