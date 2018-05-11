@@ -1,88 +1,57 @@
 ---
-layout: misc
-title: ~ ~ ~ 彩蛋 ~ ~ ~
+layout: page
+title: "Have Fun!"
 ---
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<script src="/js/star-jquery.min.js"></script>
-	<script src='/js/star-prefixfree.min.js'></script>
-	<style class="cp-pen-styles">body {
-	  background: radial-gradient(200% 100% at bottom center, #0070aa, #0b2570, #000035, #000);
-	  background: radial-gradient(220% 105% at top center, #000 10%, #000035 40%, #0b2570 65%, #0070aa);
-	  background-attachment: fixed;
-	  overflow: hidden;
-	}
+  <meta content="charset=utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/fun.css">
 
-	@keyframes rotate {
-	  0% {
-	    transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
-	  }
-	  100% {
-	    transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
-	  }
-	}
-	.stars {
-	  transform: perspective(500px);
-	  transform-style: preserve-3d;
-	  position: absolute;
-	  bottom: 0;
-	  perspective-origin: 50% 100%;
-	  left: 50%;
-	  animation: rotate 90s infinite linear;
-	}
+</head>
 
-	.star {
-	  width: 2px;
-	  height: 2px;
-	  background: #F7F7B6;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  transform-origin: 0 0 -300px;
-	  transform: translate3d(0, 0, -300px);
-	  backface-visibility: hidden;
-	}
-
-	.music {
-		position:fixed;left:5%;top:66%;
-		text-align:center;
-	}
-
-	</style>
-	</head>
 <body>
-	<div class="music">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=380 height=230 src="//music.163.com/outchain/player?type=0&id=2098892084&auto=1&height=430"></iframe>
-    </div>
-    <div class="stars"></div>
-	<script src='/js/star-stopExecutionOnTimeout.js'></script>
-	
-	<script>
-	$(document).ready(function () {
-	    var stars = 800;
-	    var $stars = $('.stars');
-	    var r = 800;
-	    for (var i = 0; i < stars; i++) {
-	        if (window.CP.shouldStopExecution(1)) {
-	            break;
-	        }
-	        var $star = $('<div/>').addClass('star');
-	        $stars.append($star);
-	    }
-	    window.CP.exitedLoop(1);
-	    $('.star').each(function () {
-	        var cur = $(this);
-	        var s = 0.2 + Math.random() * 1;
-	        var curR = r + Math.random() * 300;
-	        cur.css({
-	            transformOrigin: '0 0 ' + curR + 'px',
-	            transform: ' translate3d(0,0,-' + curR + 'px) rotateY(' + Math.random() * 360 + 'deg) rotateX(' + Math.random() * -50 + 'deg) scale(' + s + ',' + s + ')'
-	        });
-	    });
-	});
-	</script>
+  <br></br><br></br><br></br><br>↓</br><br></br>
+  <div>
+  <span class="button--bubble__container">
+    <a href="" class="button button--bubble" target="_blank" onclick="renewPage()">
+      点击进入随机页面
+    </a>
+    <span class="button--bubble__effect-container">
+      <span class="circle top-left"></span>
+      <span class="circle top-left"></span>
+      <span class="circle top-left"></span>
+  
+      <span class="button effect-button"></span>
+  
+      <span class="circle bottom-right"></span>
+      <span class="circle bottom-right"></span>
+      <span class="circle bottom-right"></span>
+    </span>
+  </span>
+  </div>
+  <br>↑</br><br></br><br></br><br></br><br></br>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
+
+  <script  src="/js/fun/fun.js"></script>
+
+  <script type="text/javascript">
+    function renewPage()
+    {
+      var a = new Array("3dflower","gravity","star","solar-system","asteroids","rogue","tower-blocks");
+      document.querySelector(".button--bubble").href = "/pages/" + a[Math.floor(Math.random()*a.length)]+".html";
+    }
+    
+  </script>
+
 </body>
 </html>

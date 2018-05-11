@@ -10,6 +10,7 @@ menu:
 - {name: '相片', folder: 'pages', file: 'photos.html'}
 - {name: '收藏', folder: 'pages', file: 'resources.html'}
 - {name: '关于我', folder: 'pages', file: 'about.html'}
+- {name: 'FUN', folder: 'pages', file: 'fun.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

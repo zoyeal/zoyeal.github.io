@@ -24,6 +24,13 @@ image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 
 &nbsp;
 
+- 2018.05.11
+
+---
+    - 添加【Fun】菜单栏，添加娱乐页面
+
+&nbsp;
+
 - 2018.04.18
 
 ---
