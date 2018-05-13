@@ -8,7 +8,9 @@ div {
   -webkit-animation: hue-rotate 10s linear infinite;
           animation: hue-rotate 10s linear infinite;
 }
-
+.button--bubble__container a {
+  text-decoration: none;
+}
 .button {
   -webkit-font-smoothing: antialiased;
   background-color: #222;
