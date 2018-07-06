@@ -165,7 +165,7 @@ wall:
 		</div>
 		<ul class="icon_list">
 			{% for site in page.wall %}
-			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
+			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" title="{{ site.desc }}" ><span>{{ site.name }}</span></a></li>
 			{% endfor %}
 		</ul>
 	</div>
@@ -176,7 +176,7 @@ wall:
 		</div>
 		<ul class="icon_list">
 			{% for site in page.it %}
-			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" ><span>{{ site.name }}</span></a></li>
+			<li><a href= "{{ site.link }}" target="_blank" rel="nofollow"><img src="{{ site.img }}" title="{{ site.desc }}" ><span>{{ site.name }}</span></a></li>
 			{% endfor %}
 		</ul>
 	</div>
