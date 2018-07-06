@@ -10,10 +10,6 @@ bookmarks:
    link: "https://www.seeseed.com/"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/SeeSeed.jpg"
    desc: 优秀设计网站导航
- - name: Radio Garden
-   link: "http://radio.garden/live/newcastle-upon-tyne/smoothradionortheast/"
-   img: "http://o84fll9yy.bkt.clouddn.com/logo/radioGarden.png"
-   desc: 全球广播电台
  - name: 茶杯狐
    link: "https://www.cupfox.com/"
    img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-cupfox.png"
@@ -21,20 +17,20 @@ bookmarks:
  - name: 史莱姆搜索
    link: "http://www.slimego.cn/"
    img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-slime.png"
-   desc: 学习资源搜索
- - name: 博客大全
-   link: "http://daohang.lusongsong.com/"
-   img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-bokedaquan.ico"
-   desc: 优秀独立博客导航
+   desc: 资源搜索
+ - name: Neets
+   link: "https://neets.cc/"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/neets.png"
+   desc: 追剧必备
+ - name: Radio Garden
+   link: "http://radio.garden/live/newcastle-upon-tyne/smoothradionortheast/"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/radioGarden.png"
+   desc: 全球广播电台
  - name: 大数据导航
    link: "http://hao.199it.com/"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/199it.png"
    desc: 大数据导航
 blogs:
- - name: CSDN
-   link: "https://www.csdn.net/"
-   img: "http://o84fll9yy.bkt.clouddn.com/logo/csdn.jpg"
-   desc: IT博客社区
  - name: 简书
    link: "https://www.jianshu.com/"
    img: "https://www.jianshu.com/favicon.ico"
@@ -47,6 +43,10 @@ blogs:
    link: "http://muchong.com/bbs"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/muchong.png"
    desc: 学术科研互动平台
+ - name: 博客大全
+   link: "http://daohang.lusongsong.com/"
+   img: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/src-bokedaquan.ico"
+   desc: 优秀独立博客导航
  - name: 人大经济论坛
    link: "http://bbs.pinggu.org/"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/pinggu.png"
@@ -64,6 +64,10 @@ it:
    link: "http://www.apache.org/"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/apache.jpg"
    desc: Apache软件基金会
+ - name: CSDN
+   link: "https://www.csdn.net/"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/csdn.jpg"
+   desc: IT博客社区
  - name: W3school
    link: "http://www.w3school.com.cn/"
    img: "http://i-3-pp8.715083.com/2017/4/8/fa2d9e5c-3d7c-4845-9a18-e60924c312d3.png"
@@ -84,11 +88,12 @@ it:
    link: "http://next.36kr.com/posts"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/next.jpg"
    desc: 最新互联网产品
+ - name: Awwwards
+   link: "https://www.awwwards.com/"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/awwwards.ico"
+   desc: 创意网站集合
+
 wall: 
- - name: YouTube
-   link: "https://www.youtube.com/"
-   img: "http://o84fll9yy.bkt.clouddn.com/logo/youtube.jpg"
-   desc: 国外最大视频网站
  - name: Instagram
    link: "https://www.instagram.com/dcdeng/"
    img: "http://77g2kh.com1.z0.glb.clouddn.com/instagram.png"
@@ -101,6 +106,14 @@ wall:
    link: "https://www.facebook.com"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/facebook.jpg"
    desc: 回国后就基本上不用了
+ - name: Reddit
+   link: "https://www.reddit.com/"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/reddit.png"
+   desc: Reddit
+ - name: Quora
+   link: "https://www.quora.com"
+   img: "http://o84fll9yy.bkt.clouddn.com/logo/quora.png"
+   desc: zhihu's father
  - name: DailyMail
    link: "http://www.dailymail.co.uk/news/worldnews/index.html"
    img: "http://o84fll9yy.bkt.clouddn.com/logo/DailyMail.jpg"
@@ -149,7 +162,7 @@ wall:
 	<table style="clear:both"></table>
 	<div class="blocks">
 		<div id="category-best-vpn" class="headline sites-group">
-			<h2 class="heading-sm">翻墙可减肥</h2>
+			<h2 class="heading-sm">墙外</h2>
 		</div>
 		<ul class="icon_list">
 			{% for site in page.wall %}
@@ -160,7 +173,7 @@ wall:
 	<table style="clear:both"></table>
 	<div class="blocks">
 		<div id="category-best-vpn" class="headline sites-group">
-			<h2 class="heading-sm">IT办公</h2>
+			<h2 class="heading-sm">IT.</h2>
 		</div>
 		<ul class="icon_list">
 			{% for site in page.it %}
