@@ -24,6 +24,15 @@ image: "https://coding.net/u/zoyeal/p/zoyeal.io/git/raw/master/notes.jpg"
 
 &nbsp;
 
+- 2018.07.09
+
+---
+    - 取消【Fun】菜单栏及页面
+
+    - 更新部分样式，添加页面背景图
+
+&nbsp;
+
 - 2018.05.11
 
 ---

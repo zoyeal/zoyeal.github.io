@@ -31,7 +31,16 @@ ul.icon_list img {
 	width: 48px; 
 	height: 48px; 
 	padding: 4px; 
-	border-radius: 28px; 
+	border-radius: 28px;
+	
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+ul.icon_list img:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 ul.icon_list span { 
 	position: absolute; 
