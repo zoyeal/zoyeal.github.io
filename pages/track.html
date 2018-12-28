@@ -8,19 +8,24 @@ layout: misc
     <meta charset="utf-8">
     <title>足迹</title>
     <style type="text/css">
-        .maps {margin: auto; text-align: center;}
+        .maps {margin: 0; }
     </style>
 </head>
-<body>
+<body margin:0; padding:0;>
     <div class="maps">
         <iframe
-            width="800" 
-            height="600" 
-            frameborder="0" 
-            style="border:0"
+            id="myiframe"
+            scrolling="no" 
+            frameborder="0"
+            width="100%" 
+            height="100%"
             src="https://www.google.com/maps/d/embed?mid=1-eIRu_d-ytoGLJDzMWrYlMdaKgq-00r4&ll=22.5554167,113.9137926&z=3" 
             >
         </iframe>
     </div>
+    <script>
+        var ifm= document.getElementById("myiframe");
+        ifm.height=document.documentElement.clientHeight;
+    </script>
 </body>
 </html>
