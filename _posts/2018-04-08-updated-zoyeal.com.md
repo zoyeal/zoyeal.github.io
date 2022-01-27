@@ -4,7 +4,7 @@ title: "DACHENG 2.0 - 网站更新笔记"
 author: "zoyeal"
 categories: doc
 tags: [normal, records]
-image: "http://cloud.zoyeal.com/notes.jpg"
+image: "http://oss.zoyeal.com/webfile/pics/notes.jpg"
 ---
 
 &nbsp;

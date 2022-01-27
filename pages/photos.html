@@ -5,34 +5,34 @@ description: "masonry"
 active: gallery
 album-title: "流光瞬息"
 images:
- - image_path: "http://cloud.zoyeal.com/sky"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/sky.jpg"
    caption: 从济南到深圳的飞机上
    exif: June 2019 | Flight to Shenzhen, China
- - image_path: "http://cloud.zoyeal.com/pic2"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic2.jpg"
    caption: 色达佛学院
    exif: December 2016 | Seda, China
- - image_path: "http://cloud.zoyeal.com/pic14"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic14.jpg"
    caption: 黄昏
    exif: August 2016 | Newcastle, United Kindom
- - image_path: "http://cloud.zoyeal.com/pic9"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic9.jpg"
    caption: 巴约之家
    exif: July 2016 | Barcelona, Spanish
- - image_path: "http://cloud.zoyeal.com/pic11"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic11.jpg"
    caption: On The Road
    exif: July 2016 | Belgium
- - image_path: "http://cloud.zoyeal.com/pic13"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic13.jpg"
    caption: 水上城市
    exif: July 2016 | Amsterdam, Netherlands
- - image_path: "http://cloud.zoyeal.com/pic7"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic7.jpg"
    caption: Sunset of the Exhibition Park
    exif: June 2016 | Newcastle, United Kindom
- - image_path: "http://cloud.zoyeal.com/pic8"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic8.jpg"
    caption: Ferris wheel
    exif: June 2016 | Newcastle, United Kindom
- - image_path: "http://cloud.zoyeal.com/pic5"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic5.jpg"
    caption: 海豚
    exif: March 2016 | Belford, United Kindom
- - image_path: "http://cloud.zoyeal.com/pic4"
+ - image_path: "http://oss.zoyeal.com/webfile/pics/pic4.jpg"
    caption: Ben山脚下的村庄
    exif: March 2016 | Fort William, United Kindom
 ---
@@ -54,7 +54,7 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 						<a class="popup" title="{{ image.caption }}" data-caption="{{ image.exif }}">
-							<img src="{{ image.image_path }}-small.jpg" longdesc="{{ image.image_path }}.jpg">
+							<img src="{{ image.image_path }}?x-oss-process=style/thumbnail_alpha" longdesc="{{ image.image_path }}">
 						</a>
 					</header>
 					<figcaption class='gallery-caption'>
